@@ -339,27 +339,6 @@ function htmlPivotTable(args) {
         return currentAmount;
     };
 
-    var getStyleForLightIndication = function(elem) {
-        var style = '';
-        if (args.configuration.light.min < args.configuration.light.max) { //what is the bad and what is the good
-            if (elem < args.configuration.light.min)
-                style = " class = 'red' ";
-            else if (elem > args.configuration.light.max)
-                style = " class = 'green' ";
-            else
-                style = " class = 'yellow' ";
-        } else {
-            if (elem > args.configuration.light.min)
-                style = " class = 'red' ";
-            else if (elem < args.configuration.light.max)
-                style = " class = 'green' ";
-            else
-                style = " class = 'yellow' ";
-
-        }
-        return style;
-    };
-
     var replaceSortNumberByName = function(namesMap, sortN) {
         var name = sortN;
         if (namesMap[sortN]) {
