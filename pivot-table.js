@@ -17,9 +17,9 @@
  * } - параметры вызова метода.
  * @returns экземплят htmlPivotTable
  * 
- * @example args = 
+ * @example args = {
+ *  container: jQuery(".someelementclass"),
  *  series:{
- *   container: jQuery(".someelementclass"),
  *   values: [
  *   {
  *       coords: [95, 2652, 412],
@@ -34,6 +34,7 @@
  *       data: 37.3
  *   }
  *  ]
+ * }
  * }
  * 
  * @author Чунин Александр
